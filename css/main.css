@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.the-nav{
+    width: 100%;
+    height: 86px;
+    background: #fff;
+    border-radius: 0px 0px 20px 20px;
+}
+.the-card{
+    background: #fff;
+}
+.logo{
+    width: 60px;
+}
+.img{
+    max-width: 230px;
+    max-height: 200px;
+}
+.bg{
+    height: 100%;
+    background: url("../img/accra.jpg");
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.overlay{
+    height: 100%;
+    background: #2709099d;
+}
+.form-control{
+    
+}
+.the-card{
+    max-width: 630px;
+    max-height: 387px;
+    margin: auto;
+    padding: 20px;
+    border-bottom: 3px dashed rgba(128, 0, 0, 0.692);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(168, 176, 184, 0.253);
+    border-radius: 17px;
+}
+
+.top-grid-item{
+    text-align: center;
+    background: rgb(255, 255, 255);
+    font-weight: 300;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 40px;
+    max-width: 320px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 40px ; 
+    border-left: 3px solid rgba(128, 0, 0, 0.918);
+
+    border-bottom: 3px dashed rgba(128, 0, 0, 0.493);
+    box-shadow: 0px 0px 30px rgba(83, 137, 160, 0.137);
+}
+.top-grid-item:hover{
+    border-radius: 20px ; 
+    border-bottom: 0px dashed rgba(128, 0, 0, 0.493);
+    border-top: 3px dashed rgba(128, 0, 0, 0.699);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.562);
+}
+
+/* Smartphones  ----------- */
+@media only screen and (min-width : 320px) and (max-width : 680px) {
+/* Styles */
+
+    .top-container{
+        grid-template-columns: repeat( 1fr);
+    }
+    .top-icon{
+        font-size: 28px !important;
+    }
+    .sub-text{
+        font-size: 17px !important;
+    }
+    
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 681px) and (max-width : 1024px) {
+/* Styles */
+    
+    #logo-text{
+        margin-left: -35px;
+    }
+    .top-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    #open-icon{
+        display: block;
+    }
+    #link{
+        display: none !important;
+    }
+    
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (max-width : 935px) {
+/* Styles */
+
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+    #open-icon{
+        display: block ;
+    }
+    .top-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #link{
+        display: none !important;
+    }
+
+    #logo-text{
+        margin-left: -50px;
+    }
+}
+@media only screen  and (max-width : 435px) {
+    /* Styles */
+    
+    .break,.gradient,.footer{
+        background: #251d71bb;
+    }
+    .extra-padding{
+        padding: 60px 30px;
+    }
+    .top-container{
+        grid-template-columns: repeat( 1fr);
+    }
+    .contact-container{
+        padding: 40px 30px;
+    }
+        #open-icon{
+            margin-right: -65px !important;
+            display: block ;
+        }
+        #link{
+            display: none !important;
+        }
+
+        #logo-text{
+            margin-left: -65px;
+        }
+    }
